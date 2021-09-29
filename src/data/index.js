@@ -463,6 +463,29 @@ export const tableData = [
         icon: 'sct.ftqq.com.png',
         website: 'https://sct.ftqq.com/',
       },
+
+      {
+        name: 'Can I use',
+        desc: 'Support tables for HTML5, CSS3, etc',
+        icon: 'caniuse.com.png',
+        website: 'https://caniuse.com/',
+      },
+
+      {
+        name: 'docsify',
+        desc: '一个神奇的文档网站生成器',
+        icon: 'docsify.js.org.ico',
+        website: 'https://docsify.js.org/#/zh-cn/',
+      },
+      
+      {
+        name: 'Logoly.Pro',
+        desc: 'A Simple Online Logo Generator',
+        icon: 'www.logoly.pro.png',
+        website: 'https://www.logoly.pro/',
+      },
+
+      
     ],
   },
   {
