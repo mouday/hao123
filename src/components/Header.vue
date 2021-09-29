@@ -45,10 +45,17 @@ export default {
   margin: 0 auto;
   font-size: 18px;
   padding-left: 20px;
+  box-sizing: border-box;
 
   h1 {
     color: #000000;
     display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: 100%;
   }
 }
 </style>

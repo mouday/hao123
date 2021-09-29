@@ -5,7 +5,7 @@ export const tableData = [
     children: [
       {
         name: '知乎',
-        desc: '问答社区',
+        desc: '中文互联网知名的可信赖问答社区',
         icon: 'www.zhihu.com.ico',
         website: 'https://www.zhihu.com/',
       },
