@@ -1,5 +1,63 @@
 export const tableData = [
   {
+    name: '阅读',
+    icon: 'el-icon-document',
+    children: [
+      {
+        name: '知乎',
+        desc: '问答社区',
+        icon: 'www.zhihu.com.ico',
+        website: 'https://www.zhihu.com/',
+      },
+
+      {
+        name: '掘金',
+        desc: '一个帮助开发者成长的社区',
+        icon: 'juejin.im.png',
+        website: 'https://juejin.im/',
+      },
+      {
+        name: 'CSDN',
+        desc: '专业IT技术社区',
+        icon: 'www.csdn.net.ico',
+        website: 'https://www.csdn.net/',
+      },
+      {
+        name: '菜鸟教程',
+        desc: '提供编程的基础技术教程',
+        icon: 'www.runoob.com.png',
+        website: 'https://www.runoob.com/',
+      },
+      {
+        name: '慕课网',
+        desc: 'IT技能学习平台',
+        icon: 'www.imooc.com.png',
+        website: 'https://www.imooc.com/',
+      },
+      {
+        name: 'SegmentFault思否',
+        desc: '中国领先的开发者技术社区',
+        icon: 'segmentfault.com.png',
+        website: 'https://segmentfault.com/',
+      },
+
+      {
+        name: '力扣（LeetCode）',
+        desc: '全球极客挚爱的技术成长平台',
+        icon: 'leetcode-cn.com.ico',
+        website: 'https://leetcode-cn.com/',
+      },
+
+      {
+        name: '牛客网',
+        desc: '一个集笔面试系统、题库、课程教育的招聘类网站',
+        icon: 'www.nowcoder.com.png',
+        website: 'https://www.nowcoder.com/',
+      },
+    ],
+  },
+
+  {
     name: '前端',
     icon: 'el-icon-monitor',
     children: [
@@ -44,6 +102,7 @@ export const tableData = [
         website: 'https://cn.vuejs.org/',
       },
 
+      
       {
         name: 'iView',
         desc: '一套基于 Vue.js 的高质量UI 组件库',
@@ -104,6 +163,162 @@ export const tableData = [
         icon: 'webpack.js.org.ico',
         website: 'https://webpack.js.org/',
       },
+      {
+        name: 'Node.js',
+        desc: '一个基于 Chrome V8 引擎 的 JavaScript 运行时',
+        icon: 'nodejs.org.png',
+        website: 'https://nodejs.org/zh-cn/',
+      },
+      {
+        name: 'NPM',
+        desc: ' Node package manager',
+        icon: 'www.npmjs.com.png',
+        website: 'https://www.npmjs.com/',
+      },
+      {
+        name: 'AdonisJs',
+        desc: '一个语法清新和优雅的Node.js Web框架',
+        icon: 'adonisjs.com.cn.png',
+        website: 'https://adonisjs.com.cn/',
+      },
+      {
+        name: 'Nuxt.js',
+        desc: '一个基于 Vue.js 的服务端渲染应用框架',
+        icon: 'zh.nuxtjs.org.ico',
+        website: 'https://zh.nuxtjs.org/',
+      },
+      {
+        name: 'Hexo',
+        desc: '快速、简洁且高效的博客框架',
+        icon: 'hexo.io.png',
+        website: 'https://hexo.io/zh-cn/',
+      },
+      {
+        name: 'vue-element-admin',
+        desc: '基于 vue 和 element-ui实现的后台前端解决方案',
+        icon: 'vue-element-admin.ico',
+        website: 'https://github.com/PanJiaChen/vue-element-admin',
+      },
+      {
+        name: 'BootCDN',
+        desc: '稳定、快速、免费的前端开源项目 CDN 加速服务',
+        icon: 'www.bootcdn.cn.png',
+        website: 'https://www.bootcdn.cn/',
+      },
+      {
+        name: 'Vite',
+        desc: '一种新型前端构建工具',
+        icon: 'cn.vitejs.dev.svg',
+        website: 'https://cn.vitejs.dev/',
+      },
+
+      
+    ],
+  },
+
+  {
+    name: 'Java',
+    icon: 'el-icon-trophy',
+    children: [
+      {
+        name: 'Java',
+        desc: '一项用于开发应用程序的技术',
+        icon: 'www.java.com.png',
+        website: 'https://www.java.com/zh_CN/',
+      },
+      {
+        name: 'WebMagic',
+        desc: '一个简单灵活的Java爬虫框架',
+        icon: 'webmagic.io.ico',
+        website: 'http://webmagic.io/',
+      },
+    ],
+  },
+  {
+    name: 'Python',
+    icon: 'el-icon-trophy',
+    children: [
+      {
+        name: 'Python',
+        desc: '一种跨平台、面向对象的动态类型语言',
+        icon: 'www.python.org.png',
+        website: 'https://www.python.org/',
+      },
+      {
+        name: 'Masonite',
+        desc: '现代的、以开发人员为中心的Python Web框架',
+        icon: 'docs.masoniteproject.com.png',
+        website: 'https://docs.masoniteproject.com/',
+      },
+
+      {
+        name: 'Matplotlib',
+        desc: 'Python 的绘图库',
+        icon: 'matplotlib.org.ico',
+        website: 'https://matplotlib.org/',
+      },
+      {
+        name: 'Jinja',
+        desc: 'modern and designer-friendly templating language for Python',
+        icon: 'jinja.palletsprojects.com.png',
+        website: 'https://jinja.palletsprojects.com/',
+      },
+      {
+        name: 'Django',
+        desc: 'Django makes it easier to build better Web apps more quickly and with less code.',
+        icon: 'www.djangoproject.com.ico',
+        website: 'https://www.djangoproject.com/',
+      },
+      {
+        name: 'Flask',
+        desc: '一个用Python编写的Web应用程序框架',
+        icon: 'flask.palletsprojects.com.png',
+        website: 'https://flask.palletsprojects.com/',
+      },
+
+      {
+        name: 'Scrapy',
+        desc: 'An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.',
+        icon: 'scrapy.org.png',
+        website: 'https://scrapy.org/',
+      },
+      {
+        name: 'lxml',
+        desc: 'the most feature-rich and easy-to-use library for processing XML and HTML in the Python language',
+        icon: 'lxml.de.ico',
+        website: 'https://lxml.de/',
+      },
+
+      {
+        name: 'jieba',
+        desc: '“结巴”中文分词：做最好的 Python 中文分词组件',
+        icon: 'github.com.fxsjy.jieba.png',
+        website: 'https://github.com/fxsjy/jieba',
+      },
+    ],
+  },
+  {
+    name: 'PHP',
+    icon: 'el-icon-trophy',
+    children: [
+      {
+        name: 'PHP',
+        desc: '一种创建动态交互性站点的强有力的服务器端脚本语言',
+        icon: 'www.php.net.png',
+        website: 'https://www.php.net/',
+      },
+      {
+        name: 'Laravel',
+        desc: 'The PHP Framework for Web Artisans',
+        icon: 'laravel.com.ico',
+        website: 'https://laravel.com/',
+      },
+      {
+        name: 'ThinkPHP',
+        desc: '一个为API开发而设计的高性能框架',
+        icon: 'www.thinkphp.cn.png',
+        website: 'http://www.thinkphp.cn/',
+      },
     ],
   },
 
@@ -123,19 +338,24 @@ export const tableData = [
         icon: 'github.com.png',
         website: 'https://github.com/',
       },
+      {
+        name: 'Gitee码云',
+        desc: '基于 Git 的代码托管和研发协作平台',
+        icon: 'gitee.com.ico',
+        website: 'https://gitee.com/',
+      },
 
+      {
+        name: 'CODING',
+        desc: '一站式软件研发管理协作平台',
+        icon: 'coding.net.ico',
+        website: 'https://coding.net/',
+      },
       {
         name: 'Shields.io',
         desc: 'Github 上各式各样的小徽章',
         icon: 'shields.io.png',
         website: 'https://shields.io/',
-      },
-
-      {
-        name: 'BootCDN',
-        desc: '稳定、快速、免费的前端开源项目 CDN 加速服务',
-        icon: 'www.bootcdn.cn.png',
-        website: 'https://www.bootcdn.cn/',
       },
 
       {
@@ -237,194 +457,14 @@ export const tableData = [
         icon: 'freemusicarchive.org.png',
         website: 'https://freemusicarchive.org',
       },
-    ],
-  },
-  {
-    name: 'Node.js',
-    icon: 'el-icon-trophy',
-    children: [
       {
-        name: 'Node.js',
-        desc: '一个基于 Chrome V8 引擎 的 JavaScript 运行时',
-        icon: 'nodejs.org.png',
-        website: 'https://nodejs.org/zh-cn/',
-      },
-      {
-        name: 'NPM',
-        desc: ' Node package manager',
-        icon: 'www.npmjs.com.png',
-        website: 'https://www.npmjs.com/',
-      },
-      {
-        name: 'AdonisJs',
-        desc: '一个语法清新和优雅的Node.js Web框架',
-        icon: 'adonisjs.com.cn.png',
-        website: 'https://adonisjs.com.cn/',
-      },
-      {
-        name: 'Nuxt.js',
-        desc: '一个基于 Vue.js 的服务端渲染应用框架',
-        icon: 'zh.nuxtjs.org.ico',
-        website: 'https://zh.nuxtjs.org/',
-      },
-      {
-        name: 'Hexo',
-        desc: '快速、简洁且高效的博客框架',
-        icon: 'hexo.io.png',
-        website: 'https://hexo.io/zh-cn/',
-      },
-      {
-        name: 'vue-element-admin',
-        desc: '基于 vue 和 element-ui实现的后台前端解决方案',
-        icon: '',
-        website: 'https://github.com/PanJiaChen/vue-element-admin',
+        name: 'Server酱',
+        desc: '一款「手机」和「服务器」、「智能设备」之间的通信软件',
+        icon: 'sct.ftqq.com.png',
+        website: 'https://sct.ftqq.com/',
       },
     ],
   },
-  {
-    name: 'Python',
-    icon: 'el-icon-trophy',
-    children: [
-      {
-        name: 'Python',
-        desc: '一种跨平台、面向对象的动态类型语言',
-        icon: 'www.python.org.png',
-        website: 'https://www.python.org/',
-      },
-      {
-        name: 'Masonite',
-        desc: '现代的、以开发人员为中心的Python Web框架',
-        icon: 'docs.masoniteproject.com.png',
-        website: 'https://docs.masoniteproject.com/',
-      },
-
-      {
-        name: 'Matplotlib',
-        desc: 'Python 的绘图库',
-        icon: 'matplotlib.org.ico',
-        website: 'https://matplotlib.org/',
-      },
-      {
-        name: 'Jinja',
-        desc: 'modern and designer-friendly templating language for Python',
-        icon: 'jinja.palletsprojects.com.png',
-        website: 'https://jinja.palletsprojects.com/',
-      },
-      {
-        name: 'Django',
-        desc: 'Django makes it easier to build better Web apps more quickly and with less code.',
-        icon: 'www.djangoproject.com.ico',
-        website: 'https://www.djangoproject.com/',
-      },
-      {
-        name: 'Flask',
-        desc: '一个用Python编写的Web应用程序框架',
-        icon: 'flask.palletsprojects.com.png',
-        website: 'https://flask.palletsprojects.com/',
-      },
-
-      {
-        name: 'Scrapy',
-        desc: 'An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way.',
-        icon: 'scrapy.org.png',
-        website: 'https://scrapy.org/',
-      },
-      {
-        name: 'lxml',
-        desc: 'the most feature-rich and easy-to-use library for processing XML and HTML in the Python language',
-        icon: 'lxml.de.ico',
-        website: 'https://lxml.de/',
-      },
-
-      {
-        name: 'jieba',
-        desc: '“结巴”中文分词：做最好的 Python 中文分词组件',
-        icon: 'github.com.fxsjy.jieba.png',
-        website: 'https://github.com/fxsjy/jieba',
-      },
-    ],
-  },
-
-  {
-    name: 'Java',
-    icon: 'el-icon-trophy',
-    children: [
-      {
-        name: 'Java',
-        desc: '一项用于开发应用程序的技术',
-        icon: 'www.java.com.png',
-        website: 'https://www.java.com/zh_CN/',
-      },
-      {
-        name: 'WebMagic',
-        desc: '一个简单灵活的Java爬虫框架',
-        icon: 'webmagic.io.ico',
-        website: 'http://webmagic.io/',
-      },
-    ],
-  },
-  {
-    name: 'PHP',
-    icon: 'el-icon-trophy',
-    children: [
-      {
-        name: 'PHP',
-        desc: '一种创建动态交互性站点的强有力的服务器端脚本语言',
-        icon: 'www.php.net.png',
-        website: 'https://www.php.net/',
-      },
-      {
-        name: 'Laravel',
-        desc: 'The PHP Framework for Web Artisans',
-        icon: 'laravel.com.ico',
-        website: 'https://laravel.com/',
-      },
-      {
-        name: 'ThinkPHP',
-        desc: '一个为API开发而设计的高性能框架',
-        icon: 'www.thinkphp.cn.png',
-        website: 'http://www.thinkphp.cn/',
-      },
-    ],
-  },
-  {
-    name: '阅读',
-    icon: 'el-icon-document',
-    children: [
-      {
-        name: '知乎',
-        desc: '问答社区',
-        icon: 'www.zhihu.com.ico',
-        website: 'https://www.zhihu.com/',
-      },
-
-      {
-        name: '掘金',
-        desc: '一个帮助开发者成长的社区',
-        icon: 'juejin.im.png',
-        website: 'https://juejin.im/',
-      },
-      {
-        name: 'CSDN',
-        desc: '专业IT技术社区',
-        icon: 'www.csdn.net.ico',
-        website: 'https://www.csdn.net/',
-      },
-      {
-        name: '菜鸟教程',
-        desc: '提供编程的基础技术教程',
-        icon: 'www.runoob.com.png',
-        website: 'https://www.runoob.com/',
-      },
-      {
-        name: '慕课网',
-        desc: 'IT技能学习平台',
-        icon: 'www.imooc.com.png',
-        website: 'https://www.imooc.com/',
-      },
-    ],
-  },
-
   {
     name: 'Chrome',
     icon: 'el-icon-bangzhu',

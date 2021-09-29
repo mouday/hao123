@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import lazyPlugin from 'vue3-lazy';
+import 'lazysizes';
 import 'reset.css';
 import './style/main.less';
 

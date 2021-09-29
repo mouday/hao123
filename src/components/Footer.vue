@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
 
-    <div class="copyright">Copyright &copy; 2021</div>
+    <div class="copyright">Copyright &copy; 2021 <span><a href="https://github.com/mouday/hao123/issues" target="_blank">issues</a></span></div>
   </div>
 </template>
 
