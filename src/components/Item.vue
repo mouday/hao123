@@ -7,7 +7,7 @@
     <div class="item__title-logo">
       <img
         class="item__logo"
-        :src="`/static/img/${item.icon}`"
+        :src="`static/img/${item.icon}`"
       >
       <span class="item__title">{{item.name}}</span>
     </div>
