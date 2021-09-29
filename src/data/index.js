@@ -102,7 +102,6 @@ export const tableData = [
         website: 'https://cn.vuejs.org/',
       },
 
-      
       {
         name: 'iView',
         desc: '一套基于 Vue.js 的高质量UI 组件库',
@@ -211,8 +210,6 @@ export const tableData = [
         icon: 'cn.vitejs.dev.svg',
         website: 'https://cn.vitejs.dev/',
       },
-
-      
     ],
   },
 
@@ -477,15 +474,13 @@ export const tableData = [
         icon: 'docsify.js.org.ico',
         website: 'https://docsify.js.org/#/zh-cn/',
       },
-      
+
       {
         name: 'Logoly.Pro',
         desc: 'A Simple Online Logo Generator',
         icon: 'www.logoly.pro.png',
         website: 'https://www.logoly.pro/',
       },
-
-      
     ],
   },
   {
