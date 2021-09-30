@@ -5,9 +5,13 @@ import 'lazysizes';
 import 'reset.css';
 import './style/main.less';
 
-createApp(App)
-  .use(lazyPlugin, {
-    loading: '/assets/images/default.png', // 图片加载时默认图片
-    error: '/assets/images/error.png', // 图片加载失败时默认图片
-  })
-  .mount('#app');
+const app = createApp(App);
+
+app.use(lazyPlugin, {
+  loading: '/assets/images/default.png', // 图片加载时默认图片
+  error: '/assets/images/error.png', // 图片加载失败时默认图片
+});
+
+app.config.globalProperties.$static_url = import.meta.env.VITE_APP_STATIC_URL;
+
+app.mount('#app');

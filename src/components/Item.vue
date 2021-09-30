@@ -7,7 +7,7 @@
     <div class="item__title-logo">
       <img
         class="item__logo lazyload"
-        :data-src="`static/img/${item.icon}`"
+        :data-src="`${$static_url}/static/img/${item.icon}`"
       >
       <span class="item__title">{{item.name}}</span>
     </div>
