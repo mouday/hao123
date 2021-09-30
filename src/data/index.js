@@ -229,6 +229,22 @@ export const tableData = [
         icon: 'webmagic.io.ico',
         website: 'http://webmagic.io/',
       },
+      {
+        name: 'Hutool',
+        desc: '一个小而全的Java工具类库',
+        icon: 'hutool.cn.jpg',
+        website: 'https://hutool.cn/',
+        children: [
+          {
+            name: 'Doc',
+            website: 'https://hutool.cn/docs/',
+          },
+          {
+            name: 'Github',
+            website: 'https://github.com/dromara/hutool/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -315,6 +331,20 @@ export const tableData = [
         desc: '一个为API开发而设计的高性能框架',
         icon: 'www.thinkphp.cn.png',
         website: 'http://www.thinkphp.cn/',
+        children: [
+          {
+            name: 'doc6.0',
+            website: 'https://www.kancloud.cn/manual/thinkphp6_0/1037479',
+          },
+          {
+            name: 'doc5.0',
+            website: 'https://www.kancloud.cn/manual/thinkphp5_1/353946',
+          },
+          {
+            name: 'doc3.2',
+            website: 'http://document.thinkphp.cn/manual_3_2.html',
+          },
+        ],
       },
     ],
   },

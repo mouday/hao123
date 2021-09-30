@@ -15,6 +15,16 @@
     <div class="item__desc">
       {{item.desc}}
     </div>
+
+    <div class="item__children">
+      <template v-for="child in item.children">
+        <a
+          :href="child.website"
+          target="_blank"
+          class="item__child"
+        >{{child.name}}</a>
+      </template>
+    </div>
   </a>
 </template>
 
@@ -70,7 +80,9 @@ export default {
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.02);
+    // transform: scale(1.02);
+    border: 1px solid #adb4bb;
+    box-shadow: 1px 5px 3px #f2f6f8;
   }
 
   &__logo {
@@ -92,6 +104,7 @@ export default {
     white-space: nowrap;
     padding-left: 10px;
   }
+
   &__desc {
     color: gray;
     font-size: 12px;
@@ -103,6 +116,26 @@ export default {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+  }
+
+  &__child {
+    font-size: 13px;
+    color: #636e72;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: '|';
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    &:last-child::after {
+      content: '';
+    }
   }
 }
 </style>
