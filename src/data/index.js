@@ -511,6 +511,12 @@ export const tableData = [
         icon: 'www.logoly.pro.png',
         website: 'https://www.logoly.pro/',
       },
+      {
+        name: '在线工具',
+        desc: '你的工具箱',
+        icon: 'tool.lu.ico',
+        website: 'https://tool.lu/',
+      },
     ],
   },
   {
