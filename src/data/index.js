@@ -230,6 +230,18 @@ export const tableData = [
         website: 'http://webmagic.io/',
       },
       {
+        name: 'Maven Repository',
+        desc: 'Search/Browse/Explore',
+        icon: 'mvnrepository.com.ico',
+        website: 'https://mvnrepository.com/',
+      },
+      {
+        name: 'Sonatype',
+        desc: 'Maven Central Repository Search',
+        icon: 'search.maven.org.ico',
+        website: 'https://search.maven.org/',
+      },
+      {
         name: 'Hutool',
         desc: '一个小而全的Java工具类库',
         icon: 'hutool.cn.jpg',
@@ -516,6 +528,12 @@ export const tableData = [
         desc: '你的工具箱',
         icon: 'tool.lu.ico',
         website: 'https://tool.lu/',
+      },
+      {
+        name: '百度翻译',
+        desc: '200种语言互译、沟通全世界！',
+        icon: 'fanyi.baidu.com.png',
+        website: 'https://fanyi.baidu.com/',
       },
     ],
   },
