@@ -13,7 +13,7 @@
     </div>
 
     <div class="item__desc">
-      {{item.desc}}
+      {{item.desc || '-'}}
     </div>
 
     <div class="item__children">

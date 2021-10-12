@@ -54,6 +54,13 @@ export const tableData = [
         icon: 'www.nowcoder.com.png',
         website: 'https://www.nowcoder.com/',
       },
+      {
+        name: '美团技术团队',
+        desc: '',
+        icon: 'tech.meituan.com.png',
+        website: 'https://tech.meituan.com/'
+      },
+      
     ],
   },
 
