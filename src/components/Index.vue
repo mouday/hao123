@@ -2,6 +2,8 @@
   <div>
     <Header />
 
+    <Search class="margin-top--20" />
+
     <div class="page-container">
       <template v-for="item, index in tableData">
         <div class="item-container">
@@ -29,6 +31,7 @@ import { tableData } from '../data/index.js';
 import FixedNavBar from './FixedNavBar.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
+import Search from './QQSearch.vue';
 
 export default {
   name: 'Index',
@@ -40,6 +43,7 @@ export default {
     FixedNavBar,
     Footer,
     Header,
+    Search,
   },
 
   data() {
