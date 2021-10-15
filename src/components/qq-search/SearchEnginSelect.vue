@@ -8,7 +8,7 @@
         @click="handleCurrentItemClick"
       >
         <img
-          :src="currentItem.logo"
+          :src="`${$static_url}/static/img/${currentItem.logo}`"
           class="search-engin-select__logo"
         >
       </a>
