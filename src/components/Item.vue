@@ -138,4 +138,28 @@ export default {
     }
   }
 }
+@media (max-width: 480px) {
+  .item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &__title {
+      height: 30px;
+      line-height: 30px;
+    }
+    &__desc {
+      display: none;
+    }
+    &__logo {
+      height: 30px;
+      width: 30px;
+    }
+    &__title-logo {
+      display: flex;
+    }
+    &__children {
+      display: none;
+    }
+  }
+}
 </style>
