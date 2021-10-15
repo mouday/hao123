@@ -2,6 +2,12 @@
   <div class="search-bg">
     <div class="m-search m-search-cs m m-search-simple">
       <div class="form cf">
+
+        <SearchEnginSelect
+          class="col-1"
+          @on-change="hanldeSearchEnginChange"
+        />
+
         <!-- <div
           class="col-1"
           id="engineList"
@@ -100,16 +106,21 @@
  * 参考：https://hao.qq.com/
  */
 // created at 2021-10-15
+import SearchEnginSelect from './SearchEnginSelect.vue';
+
 export default {
   name: 'QQSearch',
 
   props: {},
 
-  components: {},
+  components: {
+    SearchEnginSelect,
+  },
 
   data() {
     return {
       keyword: '',
+      searchEngin: null,
     };
   },
 
@@ -119,7 +130,11 @@ export default {
     async getData() {},
 
     handleSearch() {
-      window.open(`https://www.baidu.com/s?wd=${this.keyword}`, '_blank');
+      window.open(this.searchEngin.callback(this.keyword), '_blank');
+    },
+
+    hanldeSearchEnginChange(item) {
+      this.searchEngin = item;
     },
   },
 
@@ -943,7 +958,7 @@ export default {
 
 @media (max-width: 480px) {
   .m-search .form .col-2 input {
-    width: 200px;
+    width: 140px;
   }
 }
 </style>
