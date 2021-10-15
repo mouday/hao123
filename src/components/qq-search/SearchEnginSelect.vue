@@ -22,7 +22,7 @@
           @click="handleItemClick(index)"
         >
           <img
-            :src="item.logo"
+            :src="`${$static_url}/static/img/${item.logo}`"
             class="search-engin-select__logo"
           ></a>
       </template>
