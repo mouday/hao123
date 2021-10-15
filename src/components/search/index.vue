@@ -57,7 +57,7 @@
  * 参考
  * https://www.sogou.com/
  */
-import { searchEngineConfig } from './config.js';
+import { searchEngineConfig } from '../../config/search-engine.js';
 
 export default {
   name: '',
