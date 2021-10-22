@@ -58,9 +58,20 @@ export const tableData = [
         name: '美团技术团队',
         desc: '',
         icon: 'tech.meituan.com.png',
-        website: 'https://tech.meituan.com/'
+        website: 'https://tech.meituan.com/',
       },
-      
+      {
+        name: '阮一峰',
+        desc: '阮一峰的个人网站',
+        icon: 'www.ruanyifeng.com.ico',
+        website: 'http://www.ruanyifeng.com/',
+      },
+      {
+        name: '廖雪峰',
+        desc: '研究互联网产品和技术，提供原创中文精品教程',
+        icon: 'www.liaoxuefeng.com.ico',
+        website: 'https://www.liaoxuefeng.com/',
+      },
     ],
   },
 
@@ -100,6 +111,16 @@ export const tableData = [
         desc: '轻量、可靠的移动端 Vue 组件库',
         icon: 'vant.youzan.github.io.png',
         website: 'https://youzan.github.io/vant/#/zh-CN/',
+        children: [
+          {
+            name: 'vant',
+            website: 'https://vant-contrib.gitee.io/vant/#/zh-CN/',
+          },
+          {
+            name: 'vant-weapp',
+            website: 'https://vant-contrib.gitee.io/vant-weapp/#/home',
+          },
+        ],
       },
 
       {
