@@ -7,7 +7,7 @@
     <div class="item__title-logo">
       <img
         class="item__logo lazyload"
-        :data-src="`${$static_url}/static/img/${item.icon}`"
+        :data-src="icon"
       >
       <span class="item__title">{{item.name}}</span>
     </div>
@@ -48,7 +48,15 @@ export default {
     return {};
   },
 
-  computed: {},
+  computed: {
+    icon() {
+      if (this.item.icon) {
+        return `${this.$static_url}/static/img/${this.item.icon}`;
+      } else {
+        return `${this.$static_url}/favicon.ico`;
+      }
+    },
+  },
 
   methods: {
     async getData() {},

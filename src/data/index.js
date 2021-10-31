@@ -238,6 +238,147 @@ export const tableData = [
         icon: 'cn.vitejs.dev.svg',
         website: 'https://cn.vitejs.dev/',
       },
+      {
+        name: 'swiper',
+        desc: '轮播图幻灯片js插件',
+        icon: 'swiperjs.com.png',
+        website: 'https://swiperjs.com/',
+        children: [
+          {
+            name: 'zh',
+            website: 'https://www.swiper.com.cn/',
+          },
+        ],
+      },
+      {
+        name: 'Animate.css',
+        desc: 'CSS动画库',
+        icon: 'animate.style.ico',
+        website: 'https://animate.style/',
+      },
+      {
+        name: 'mescroll',
+        desc: '精致的下拉刷新和上拉加载js框架',
+        icon: 'www.mescroll.com.ico',
+        website: 'https://www.mescroll.com/',
+      },
+      {
+        name: 'lodash.js',
+        desc: '一个实用工具库',
+        icon: 'www.lodashjs.com.ico',
+        website: 'https://www.lodashjs.com/',
+      },
+      {
+        name: 'Day.js',
+        desc: '日期和时间',
+        icon: 'day.js.org.ico',
+        website: 'https://day.js.org/',
+        children: [
+          {
+            name: 'zh',
+            website: 'https://dayjs.gitee.io/zh-CN/',
+          },
+        ],
+      },
+      {
+        name: 'timeago.js',
+        desc: '显示几小时之前',
+        icon: 'timeago.org.png',
+        website: 'https://timeago.org/',
+        children: [
+          {
+            name: 'github',
+            website: 'https://github.com/hustcc/timeago.js',
+          },
+        ],
+        
+      },
+      {
+        name: 'ECharts',
+        desc: '可视化图表库',
+        icon: 'echarts.apache.org.png',
+        website: 'https://echarts.apache.org/',
+      },
+      {
+        name: 'Meditor.md',
+        desc: 'Markdown编辑器',
+        icon: 'pandao.github.io.ico',
+        website: 'https://pandao.github.io/editor.md/',
+      },
+
+      {
+        name: 'validator.js',
+        desc: '表单验证',
+        icon: 'validatorjs.github.io.png',
+        website: 'https://github.com/validatorjs/validator.js',
+      },
+      {
+        name: 'vue-draggable',
+        desc: 'Vue拖拽组件',
+        icon: 'sortablejs.github.io.ico',
+        website: 'https://sortablejs.github.io/Vue.Draggable/',
+        children: [
+          {
+            name: 'github',
+            website: 'https://github.com/SortableJS/Vue.Draggable',
+          },
+        ],
+      },
+      {
+        name: 'vue-qr',
+        desc: 'Vue生成二维码',
+        icon: 'Binaryify.github.io.jpeg',
+        website: 'https://github.com/Binaryify/vue-qr',
+        children: [
+          {
+            name: 'npm',
+            website: 'https://www.npmjs.com/package/vue-qr',
+          },
+        ],
+      },
+      {
+        name: 'vue-cropper',
+        desc: 'Vue图片剪裁',
+        icon: 'xyxiao.github.io.ico',
+        website: 'https://github.com/xyxiao001/vue-cropper',
+        children: [
+          {
+            name: 'example',
+            website: 'http://github.xyxiao.cn/vue-cropper/example/',
+          },
+        ],
+        
+      },
+
+      {
+        name: 'vue-lazyload',
+        desc: '图片懒加载',
+        icon: 'hilongjw.github.io.jpeg',
+        website: 'http://hilongjw.github.io/vue-lazyload/',
+        children: [
+          {
+            name: 'npm',
+            website: 'https://www.npmjs.com/package/vue-lazyload',
+          },
+          {
+            name: 'github',
+            website: 'https://github.com/hilongjw/vue-lazyload',
+          },
+        ],
+      },
+      {
+        name: 'vue-simple-upload',
+        desc: 'Vue上传组件',
+        icon: 'saivarunk.github.io.png',
+        website: 'https://saivarunk.github.io/vue-simple-upload/',
+        children: [
+        
+          {
+            name: 'github',
+            website: 'https://github.com/saivarunk/vue-simple-upload',
+          },
+        ],
+      },
     ],
   },
 
