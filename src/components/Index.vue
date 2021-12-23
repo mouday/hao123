@@ -4,6 +4,9 @@
 
     <Search class="margin-top--20" />
 
+    <!-- 热点数据 -->
+    <HotData></HotData>
+
     <div class="page-container">
       <template v-for="item, index in tableData">
         <div class="item-container">
@@ -32,6 +35,7 @@ import FixedNavBar from './FixedNavBar.vue';
 import Footer from './Footer.vue';
 import Header from './Header.vue';
 import Search from './qq-search/index.vue';
+import HotData from './HotData.vue';
 
 export default {
   name: 'Index',
@@ -44,6 +48,7 @@ export default {
     Footer,
     Header,
     Search,
+    HotData,
   },
 
   data() {

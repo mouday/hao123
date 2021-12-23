@@ -6,6 +6,9 @@
 
 <script>
 import Index from './components/Index.vue';
+import { useHotDataStore } from '@/stores/hot-data-store.js';
+import { mapActions } from 'pinia';
+
 // created at 2021-09-29
 export default {
   name: 'App',
@@ -23,7 +26,11 @@ export default {
   computed: {},
 
   methods: {
-    async getData() {},
+    async getData() {
+      this.loadHotData();
+    },
+
+    ...mapActions(useHotDataStore, ['loadHotData']),
   },
 
   created() {
@@ -33,5 +40,4 @@ export default {
 </script>
 
 <style lang="less">
-
 </style>

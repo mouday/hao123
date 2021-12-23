@@ -3,6 +3,7 @@
     class="item"
     :href="item.website"
     target="_blank"
+    @click="handleItemClick"
   >
     <div class="item__title-logo">
       <img
@@ -21,6 +22,7 @@
         <a
           :href="child.website"
           target="_blank"
+          @click.stop="handleChildClick(child)"
           class="item__child"
         >{{child.name}}</a>
       </template>
@@ -30,6 +32,11 @@
 
 <script>
 // created at 2021-09-29
+import { useHotDataStore } from '@/stores/hot-data-store.js';
+import { mapActions } from 'pinia';
+
+// const store = useHotDataStore()
+
 export default {
   name: 'Item',
 
@@ -68,9 +75,24 @@ export default {
 
       return modules[path].default;
     },
+
+    handleItemClick() {
+      console.log('handleItemClick', this.item);
+      // this.appendItem(this.item)
+      // useHotDataStore.appendItem(this.item)
+      this.appendItem(this.item)
+    },
+
+    handleChildClick(child) {
+      console.log('handleChildClick', child);
+      this.appendItem(child)
+    },
+    
+    ...mapActions(useHotDataStore, ['appendItem']),
   },
 
   created() {
+    // console.dir(useHotDataStore);
     this.getData();
   },
 };

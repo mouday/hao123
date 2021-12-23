@@ -291,7 +291,6 @@ export const tableData = [
             website: 'https://github.com/hustcc/timeago.js',
           },
         ],
-        
       },
       {
         name: 'ECharts',
@@ -347,7 +346,6 @@ export const tableData = [
             website: 'http://github.xyxiao.cn/vue-cropper/example/',
           },
         ],
-        
       },
 
       {
@@ -372,12 +370,23 @@ export const tableData = [
         icon: 'saivarunk.github.io.png',
         website: 'https://saivarunk.github.io/vue-simple-upload/',
         children: [
-        
           {
             name: 'github',
             website: 'https://github.com/saivarunk/vue-simple-upload',
           },
         ],
+      },
+      {
+        name: 'Pinia',
+        desc: 'The Vue Store that you will enjoy using',
+        icon: 'pinia.vuejs.org.png',
+        website: 'https://pinia.vuejs.org/',
+      },
+      {
+        name: '网道 WangDoc',
+        desc: '一个文档网站',
+        icon: 'wangdoc.com.png',
+        website: 'https://wangdoc.com/',
       },
     ],
   },
@@ -489,6 +498,18 @@ export const tableData = [
         icon: 'github.com.fxsjy.jieba.png',
         website: 'https://github.com/fxsjy/jieba',
       },
+      {
+        name: 'orator',
+        desc: 'a simple yet beautiful ActiveRecord implementation',
+        icon: 'orator-orm.com.jpeg',
+        website: 'https://orator-orm.com/',
+        children: [
+          {
+            name: 'Github',
+            website: 'https://github.com/sdispater/orator',
+          },
+        ],
+      },
     ],
   },
   {
@@ -500,6 +521,18 @@ export const tableData = [
         desc: '一种创建动态交互性站点的强有力的服务器端脚本语言',
         icon: 'www.php.net.png',
         website: 'https://www.php.net/',
+        children: [
+          {
+            name: 'PHP手册',
+            website: 'https://www.php.net/manual/zh/index.php',
+          },
+        ],
+      },
+      {
+        name: 'packagist',
+        desc: 'the main Composer repository',
+        icon: 'packagist.org.ico',
+        website: 'https://packagist.org/',
       },
       {
         name: 'Laravel',
@@ -703,6 +736,24 @@ export const tableData = [
         desc: '200种语言互译、沟通全世界！',
         icon: 'fanyi.baidu.com.png',
         website: 'https://fanyi.baidu.com/',
+      },
+      {
+        name: '阿里云官方镜像站',
+        desc: '提供极速全面稳定的系统镜像服务',
+        icon: 'developer.aliyun.com.ico',
+        website: 'https://developer.aliyun.com/mirror/',
+      },
+      {
+        name: '华为开源镜像站',
+        desc: '华为云DevCloud团队提供的全类型镜像站服务',
+        icon: 'huaweicloud.com.ico',
+        website: 'https://mirrors.huaweicloud.com/home',
+      },
+      {
+        name: '腾讯软件源',
+        desc: '宣传自由软件的价值',
+        icon: 'cloud.tencent.com.ico',
+        website: 'https://mirrors.tencent.com/',
       },
     ],
   },

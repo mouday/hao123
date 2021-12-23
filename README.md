@@ -17,3 +17,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - http://www.alloyteam.com/nav/
 - http://www.cxysite.com/
+
+## 问题
+
+1. vite 的版本差异比较多，2.4.1 可以热更新前端页面，新版本可能不行
