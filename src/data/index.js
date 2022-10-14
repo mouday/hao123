@@ -388,6 +388,12 @@ export const tableData = [
         icon: 'wangdoc.com.png',
         website: 'https://wangdoc.com/',
       },
+      {
+        name: 'MDN',
+        desc: 'Web 开发技术',
+        icon: 'developer.mozilla.org.png',
+        website: 'https://developer.mozilla.org/zh-CN/docs/Web',
+      },
     ],
   },
 
