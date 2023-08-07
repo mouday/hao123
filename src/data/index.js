@@ -579,6 +579,14 @@ export const tableData = [
         icon: 'mouday.github.io.tools.ico',
         website: 'https://mouday.github.io/tools/',
       },
+
+      {
+        name: 'Convert curl',
+        desc: 'convert curl to python code',
+        icon: 'curlconverter.com.png',
+        website: 'https://curlconverter.com/',
+      },
+      
       {
         name: 'JSON',
         desc: 'JSON在线解析及格式化验证',
