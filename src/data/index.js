@@ -574,6 +574,12 @@ export const tableData = [
     icon: 'el-icon-suitcase',
     children: [
       {
+        name: 'More Tools',
+        desc: '在线工具箱',
+        icon: 'mouday.github.io.tools.ico',
+        website: 'https://mouday.github.io/tools/',
+      },
+      {
         name: 'JSON',
         desc: 'JSON在线解析及格式化验证',
         icon: 'www.json.cn.png',
