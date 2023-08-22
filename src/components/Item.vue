@@ -1,20 +1,13 @@
 <template>
-  <a
-    class="item"
-    :href="item.website"
-    target="_blank"
-    @click="handleItemClick"
-  >
+  <a class="item" :href="item.website" target="_blank" @click="handleItemClick">
     <div class="item__title-logo">
-      <img
-        class="item__logo lazyload"
-        :data-src="icon"
-      >
-      <span class="item__title">{{item.name}}</span>
+      <!-- <img class="item__logo lazyload" :data-src="icon" /> -->
+      <span class="item__logo" :style="logoStyle">{{ firstLetter }}</span>
+      <span class="item__title">{{ item.name }}</span>
     </div>
 
     <div class="item__desc">
-      {{item.desc || '-'}}
+      {{ item.desc || "-" }}
     </div>
 
     <div class="item__children">
@@ -24,7 +17,8 @@
           target="_blank"
           @click.stop="handleChildClick(child)"
           class="item__child"
-        >{{child.name}}</a>
+          >{{ child.name }}</a
+        >
       </template>
     </div>
   </a>
@@ -32,13 +26,21 @@
 
 <script>
 // created at 2021-09-29
-import { useHotDataStore } from '@/stores/hot-data-store.js';
-import { mapActions } from 'pinia';
+import { useHotDataStore } from "@/stores/hot-data-store.js";
+import { mapActions } from "pinia";
+import rgbaster from "rgbaster";
 
 // const store = useHotDataStore()
+function randomColor() {
+  let r = Math.floor(Math.random() * 255);
+  let g = Math.floor(Math.random() * 255);
+  let b = Math.floor(Math.random() * 255);
+
+  return `rgb(${r},${g},${b})`;
+}
 
 export default {
-  name: 'Item',
+  name: "Item",
 
   props: {
     item: {
@@ -63,6 +65,16 @@ export default {
         return `${this.$static_url}/favicon.ico`;
       }
     },
+    firstLetter() {
+      return this.item.name[0];
+    },
+
+    logoStyle() {
+      return {
+        color: this.item.color || "#fff",
+        "background-color": this.item.backgroundColor || randomColor(),
+      };
+    },
   },
 
   methods: {
@@ -70,25 +82,42 @@ export default {
 
     getSrc(name) {
       const path = `/assets/img/${name}`;
-      const modules = import.meta.globEager('/assets/img/**');
+      const modules = import.meta.globEager("/assets/img/**");
       console.log(modules);
 
       return modules[path].default;
     },
 
     handleItemClick() {
-      console.log('handleItemClick', this.item);
+      console.log("handleItemClick", this.item);
       // this.appendItem(this.item)
       // useHotDataStore.appendItem(this.item)
-      this.appendItem(this.item)
+      this.appendItem(this.item);
     },
 
     handleChildClick(child) {
-      console.log('handleChildClick', child);
-      this.appendItem(child)
+      console.log("handleChildClick", child);
+      this.appendItem(child);
     },
-    
-    ...mapActions(useHotDataStore, ['appendItem']),
+
+    ...mapActions(useHotDataStore, ["appendItem"]),
+  },
+
+  async mounted() {
+    // let icon = new Image();
+    // icon.onload = (img) => {
+    //   console.log(img);
+    //   var colorThief = new ColorThief();
+
+    //   let colors = colorThief.getColor(img);
+    //   console.log(colors);
+    // };
+
+    // icon.src = this.icon;
+    if (!this.item.backgroundColor) {
+      let res = await rgbaster(this.icon, { scale: 0.6 });
+      console.log(this.item.name, res[0].color);
+    }
   },
 
   created() {
@@ -116,11 +145,17 @@ export default {
   }
 
   &__logo {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 1;
     border-radius: 50%;
     vertical-align: middle;
     object-fit: contain;
+    // display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
   }
 
   &__title {
@@ -158,13 +193,13 @@ export default {
     }
 
     &::after {
-      content: '|';
+      content: "|";
       padding-left: 5px;
       padding-right: 5px;
     }
 
     &:last-child::after {
-      content: '';
+      content: "";
     }
   }
 }
